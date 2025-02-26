@@ -1,17 +1,13 @@
 import express from "express";
 import ViteExpress from "vite-express";
 import dotenv from "dotenv";
-import { ClerkExpressWithAuth } from '@clerk/express';
 import { requireAuth } from '@clerk/express';
 
+const auth = requireAuth({signInUrl: process.env.CLERK_SIGN_IN_URL})
 
 dotenv.config();
 const app = express();
-app.use(
-  ClerkExpressWithAuth({
-    secretKey: process.env.CLERK_SECRET_KEY,
-  })
-);
+// app.use(requireAuth());
 
 
 
