@@ -1,5 +1,6 @@
 
 import { ArrowRight } from "lucide-react";
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
 import { Button } from "./ui/button";
 
 const HeroSection = () => {
@@ -27,6 +28,12 @@ const HeroSection = () => {
           Get Started
           <ArrowRight className="ml-2 h-5 w-5" />
         </Button>
+        <SignedOut>
+        <SignInButton />
+      </SignedOut>
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
       </div>
 
       <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-white to-transparent"/>
