@@ -10,6 +10,7 @@ import Prediction from "./pages/Prediction";
 import HealthTips from "./pages/HealthTips";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import { RedirectToSignIn, RedirectToSignUp } from "@clerk/clerk-react";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,8 @@ const App = () => (
           <Route path="/health-tips" element={<HealthTips />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/signup" element={<RedirectToSignUp />} />
+          <Route path="/signin" element={<RedirectToSignIn />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
