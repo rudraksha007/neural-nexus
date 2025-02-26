@@ -1,39 +1,18 @@
 /** @type {import('tailwindcss').Config} */
-
 export default {
-  darkMode: ["class"],
-  content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
-
-  prefix: "",
-  // This mode helps ensure all style variants are generated
-  safelist: [
-    // Add any classes that might be dynamically generated
-    { pattern: /bg-sage-.*/ },
-    { pattern: /text-sage-.*/ },
-    { pattern: /border-sage-.*/ },
-    { pattern: /hover:.*/ }
-  ],
+  darkMode: "class",  // Use class-based dark mode
+  content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],  // Specify the content files to be scanned for classes
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
     extend: {
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        sans: ["Inter", "sans-serif"],  // Add the 'Inter' font as a primary sans-serif font
       },
       colors: {
-        // Direct color definitions without function wrappers
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-
-        // Sage color palette
+        border: "#E5E7EB",
+        input: "#E5E7EB",
+        ring: "#1F2937",
+        background: "#FFFFFF",
+        foreground: "#1F2937",
         sage: {
           50: "#f4f7f4",
           100: "#e3efe3",
@@ -46,39 +25,27 @@ export default {
           800: "#244524",
           900: "#1e371e",
         },
-
-        // Named colors
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
+        primary: "#1F2937",
+        "primary-foreground": "#F9FAFB",
+        secondary: "#F3F4F6",
+        "secondary-foreground": "#1F2937",
+        destructive: "#EF4444",
+        "destructive-foreground": "#F9FAFB",
+        muted: "#F3F4F6",
+        "muted-foreground": "#6B7280",
+        accent: "#F3F4F6",
+        "accent-foreground": "#1F2937",
+        popover: "#FFFFFF",
+        "popover-foreground": "#1F2937",
+        card: "#FFFFFF",
+        "card-foreground": "#1F2937",
       },
-      borderColor: {
-        DEFAULT: "hsl(var(--border))",
+      borderRadius: {
+        DEFAULT: "0.5rem",
+        sm: "0.25rem",
+        md: "0.375rem",
+        lg: "0.5rem",
+        xl: "0.75rem",
       },
       keyframes: {
         "accordion-down": {
@@ -108,6 +75,21 @@ export default {
   },
   plugins: [
     require("tailwindcss-animate"),
-    // Add any other plugins you might need
   ],
 };
+
+module.exports = {
+  content: [
+    './src/**/*.{html,js,jsx,ts,tsx,vue}', // Define the paths to all your template files
+  ],
+  theme: {
+    extend: {
+      colors: {
+        // You can define custom colors here if necessary
+        background: '#f5f5f5',  // Example background color
+        foreground: '#333333',  // Example foreground color
+      },
+    },
+  },
+  plugins: [],
+}

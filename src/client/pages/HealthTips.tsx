@@ -77,7 +77,7 @@ const HealthTips = () => {
       <Navbar />
       
       <main className="pt-16">
-        <section className="bg-gradient-to-b from-sage-50 to-white py-20">
+        <section className="bg-gradient-to-b from-green-50 to-white py-20">
           <div className="max-w-6xl mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-4xl font-bold text-gray-900 mb-6">
@@ -113,7 +113,7 @@ const HealthTips = () => {
                     <Card>
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
-                          <category.icon className="w-5 h-5 text-sage-600" />
+                          <category.icon className="w-5 h-5 text-green-600" />
                           {category.label} Recommendations
                         </CardTitle>
                       </CardHeader>
@@ -122,7 +122,7 @@ const HealthTips = () => {
                           {category.tips.map((tip, index) => (
                             <li key={index} className="flex items-start gap-2">
                               <div className="w-5 h-5 mt-1 flex-shrink-0">
-                                <div className="w-2 h-2 bg-sage-600 rounded-full" />
+                                <div className="w-2 h-2 bg-green-600 rounded-full" />
                               </div>
                               <span className="text-gray-600">{tip}</span>
                             </li>
@@ -134,7 +134,7 @@ const HealthTips = () => {
                     <Card>
                       <CardHeader>
                         <CardTitle className="flex items-center gap-2">
-                          <Brain className="w-5 h-5 text-sage-600" />
+                          <Brain className="w-5 h-5 text-green-600" />
                           Why It Matters
                         </CardTitle>
                       </CardHeader>

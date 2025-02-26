@@ -32,7 +32,7 @@ const Contact = () => {
       
       <main className="pt-16">
         {/* Hero Section */}
-        <section className="bg-gradient-to-b from-sage-50 to-white py-20">
+        <section className="bg-gradient-to-b from-green-50 to-white py-20">
           <div className="max-w-6xl mx-auto px-4">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Contact Us
@@ -54,7 +54,7 @@ const Contact = () => {
                   href={item.link}
                   className="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <item.icon className="w-8 h-8 text-sage-600 mb-4" />
+                  <item.icon className="w-8 h-8 text-green-800 mb-4" />
                   <h3 className="font-semibold text-gray-900 mb-2">{item.title}</h3>
                   <p className="text-gray-600">{item.details}</p>
                 </a>
@@ -72,7 +72,7 @@ const Contact = () => {
                     </label>
                     <input
                       type="text"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-sage-500 focus:border-sage-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
                     />
                   </div>
                   <div>
@@ -81,7 +81,7 @@ const Contact = () => {
                     </label>
                     <input
                       type="text"
-                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-sage-500 focus:border-sage-500"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
                     />
                   </div>
                 </div>
@@ -92,7 +92,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="email"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-sage-500 focus:border-sage-500"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
                   />
                 </div>
                 
@@ -102,11 +102,11 @@ const Contact = () => {
                   </label>
                   <textarea
                     rows={4}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-sage-500 focus:border-sage-500"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500"
                   ></textarea>
                 </div>
                 
-                <Button className="w-full bg-sage-600 hover:bg-sage-700">
+                <Button className="w-full bg-green-700 hover:bg-green-800 cursor-pointer">
                   <Send className="w-4 h-4 mr-2" />
                   Send Message
                 </Button>

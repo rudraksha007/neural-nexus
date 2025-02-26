@@ -43,7 +43,7 @@ const About = () => {
       
       <main className="pt-16">
         {/* Hero Section */}
-        <section className="bg-gradient-to-b from-sage-50 to-white py-20">
+        <section className="bg-gradient-to-b from-green-50 to-white py-20">
           <div className="max-w-6xl mx-auto px-4">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               About Health Predictor AI
@@ -78,7 +78,7 @@ const About = () => {
                     key={index}
                     className="p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow"
                   >
-                    <feature.icon className="w-8 h-8 text-sage-600 mb-4" />
+                    <feature.icon className="w-8 h-8 text-green-600 mb-4" />
                     <h3 className="font-semibold text-gray-900 mb-2">{feature.title}</h3>
                     <p className="text-sm text-gray-600">{feature.description}</p>
                   </div>
@@ -89,7 +89,7 @@ const About = () => {
         </section>
 
         {/* What We Do Section */}
-        <section className="bg-sage-50 py-16">
+        <section className="bg-green-50 py-16">
           <div className="max-w-6xl mx-auto px-4">
             <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">What We Do</h2>
             <div className="grid md:grid-cols-3 gap-8">

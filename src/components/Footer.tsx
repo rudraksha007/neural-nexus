@@ -20,7 +20,7 @@ const Footer = () => {
             <ul className="space-y-2">
               {["About", "Features", "Privacy", "Contact"].map((item) => (
                 <li key={item}>
-                  <a href="#" className="text-gray-600 hover:text-sage-600 transition-colors">
+                  <a href="#" className="text-gray-600 hover:text-green-800 transition-colors">
                     {item}
                   </a>
                 </li>
@@ -35,9 +35,9 @@ const Footer = () => {
                 <a
                   key={index}
                   href="#"
-                  className="w-10 h-10 rounded-full bg-sage-50 flex items-center justify-center hover:bg-sage-100 transition-colors"
+                  className="w-10 h-10 rounded-full bg-green-50 flex items-center justify-center hover:bg-green-100 transition-colors"
                 >
-                  <Icon className="w-5 h-5 text-sage-600" />
+                  <Icon className="w-5 h-5 text-green-700" />
                 </a>
               ))}
             </div>

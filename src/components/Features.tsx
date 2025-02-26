@@ -37,10 +37,10 @@ const Features = () => {
           ].map((feature, index) => (
             <div
               key={index}
-              className="p-8 rounded-2xl bg-white border border-gray-100 hover:border-sage-200 transition-all duration-300 hover:shadow-lg group"
+              className="p-8 rounded-2xl bg-white border border-gray-100 hover:border-green-500 transition-all duration-300 hover:shadow-lg group"
             >
-              <div className="w-12 h-12 rounded-full bg-sage-100 flex items-center justify-center mb-6 group-hover:bg-sage-200 transition-colors">
-                <feature.icon className="w-6 h-6 text-sage-600" />
+              <div className="w-12 h-12 rounded-full bg-green-50 flex items-center justify-center mb-6 group-hover:bg-green-100 transition-colors">
+                <feature.icon className="w-6 h-6 text-green-800" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
                 {feature.title}

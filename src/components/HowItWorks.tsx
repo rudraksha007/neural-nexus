@@ -26,7 +26,7 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="py-24 px-4 bg-gradient-to-b from-white to-sage-50">
+    <section className="py-24 px-4 bg-gradient-to-b from-white to-green-50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -45,13 +45,13 @@ const HowItWorks = () => {
               className="relative group"
             >
               <div className="p-6 rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-300">
-                <div className="text-sage-600 font-bold text-lg mb-4">{step.number}</div>
+                <div className="text-green-800 font-bold text-lg mb-4">{step.number}</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">{step.title}</h3>
                 <p className="text-gray-600">{step.description}</p>
               </div>
               {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-1/2 right-0 w-full h-0.5 bg-sage-200 -z-10 transform translate-x-1/2">
-                  <div className="absolute top-1/2 right-0 w-3 h-3 rounded-full bg-sage-400 transform -translate-y-1/2 translate-x-1/2" />
+                <div className="hidden md:block absolute top-1/2 right-0 w-full h-0.5 bg-green-200 -z-10 transform translate-x-1/2">
+                  <div className="absolute top-1/2 right-0 w-3 h-3 rounded-full bg-green-400 transform -translate-y-1/2 translate-x-1/2" />
                 </div>
               )}
             </div>

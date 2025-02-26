@@ -41,7 +41,7 @@ const Prediction = () => {
       <Navbar />
       
       <main className="pt-16">
-        <section className="bg-gradient-to-b from-sage-50 to-white py-20">
+        <section className="bg-gradient-to-b from-green-50 to-white py-20">
           <div className="max-w-6xl mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-4xl font-bold text-gray-900 mb-6">
@@ -136,7 +136,7 @@ const Prediction = () => {
                 </div>
               </div>
 
-              <Button type="submit" className="w-full bg-sage-600 hover:bg-sage-700">
+              <Button type="submit" className="w-full bg-green-700 hover:bg-green-800 cursor-pointer">
                 <Brain className="w-4 h-4 mr-2" />
                 Generate Prediction
               </Button>

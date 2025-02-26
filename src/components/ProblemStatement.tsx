@@ -37,10 +37,10 @@ const ProblemStatement = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className="p-6 rounded-2xl bg-sage-50 hover:bg-sage-100 transition-all duration-300 transform hover:-translate-y-1 group"
+              className="p-6 rounded-2xl bg-green-50 hover:bg-green-150 transition-all duration-300 transform hover:-translate-y-1 group"
             >
-              <div className="w-12 h-12 rounded-full bg-sage-100 group-hover:bg-sage-200 flex items-center justify-center mb-4">
-                <item.icon className="w-6 h-6 text-sage-600" />
+              <div className="w-12 h-12 rounded-full bg-sage-100 group-hover:bg-green-200 flex items-center justify-center mb-4">
+                <item.icon className="w-6 h-6 text-green-800" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
               <p className="text-gray-600">{item.description}</p>
