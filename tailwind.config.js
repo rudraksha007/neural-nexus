@@ -1,15 +1,18 @@
-
-// import type { Config } from "tailwindcss";
+/** @type {import('tailwindcss').Config} */
 
 export default {
   darkMode: ["class"],
-  content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
+
   prefix: "",
+  // This mode helps ensure all style variants are generated
+  safelist: [
+    // Add any classes that might be dynamically generated
+    { pattern: /bg-sage-.*/ },
+    { pattern: /text-sage-.*/ },
+    { pattern: /border-sage-.*/ },
+    { pattern: /hover:.*/ }
+  ],
   theme: {
     container: {
       center: true,
@@ -23,11 +26,14 @@ export default {
         sans: ["Inter", "sans-serif"],
       },
       colors: {
+        // Direct color definitions without function wrappers
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+
+        // Sage color palette
         sage: {
           50: "#f4f7f4",
           100: "#e3efe3",
@@ -40,6 +46,8 @@ export default {
           800: "#244524",
           900: "#1e371e",
         },
+
+        // Named colors
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -69,6 +77,9 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      borderColor: {
+        DEFAULT: "hsl(var(--border))",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -95,5 +106,8 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-}
+  plugins: [
+    require("tailwindcss-animate"),
+    // Add any other plugins you might need
+  ],
+};

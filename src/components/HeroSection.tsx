@@ -22,7 +22,8 @@ const HeroSection = () => {
         </p>
         
         <Button
-          className="mt-8 px-8 py-6 bg-sage-600 hover:bg-sage-700 text-white rounded-full transition-all duration-300 transform hover:scale-105"
+          // className="mt-8 px-8 py-6 bg-sage-600 hover:bg-sage-700 text-white rounded-full transition-all duration-300 transform hover:scale-105"
+          // className="mt-8 px-8 py-6 bg-sage-600 text-white"
         >
           Get Started
           <ArrowRight className="ml-2 h-5 w-5" />
